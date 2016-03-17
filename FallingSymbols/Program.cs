@@ -51,7 +51,7 @@ namespace FallingSymbols
                 {
                     FireworkList.Add(new Symbol());
 
-                    replacement_Item = new Thread(FireworkMoove);
+                    replacement_Item = new Thread(SymbolMoove);
                     replacement_Item.Start(FireworkList[FireworkList.Count - 1]);
                 }
             }
@@ -59,7 +59,7 @@ namespace FallingSymbols
         }
 
 
-        static void FireworkMoove(Object obj)
+        static void SymbolMoove(Object obj)
         {
             Symbol item = obj as Symbol;
 
@@ -73,8 +73,6 @@ namespace FallingSymbols
                     if (Console.CursorTop == Console.WindowHeight - 3)
                     {
                         item.life = false;
-
-                        //item.coord_y = 1;
                     }
                     else
                     {
@@ -104,8 +102,8 @@ namespace FallingSymbols
             List<Symbol> firework_list = list as List<Symbol>;
             foreach (Symbol item in firework_list)
             {
-                Thread forOne = new Thread(Program.FireworkMoove);
-                forOne.Start(item);
+                Thread symbol_live = new Thread(Program.SymbolMoove);
+                symbol_live.Start(item);
             }
         }
 
@@ -136,10 +134,10 @@ namespace FallingSymbols
             {
                 this.color = GetRandomConsoleColor();
                 this.life = true;
-                this.coord_x = RandomInstanse.Next(2, 60);
+                this.coord_x = RandomInstanse.Next(1, 60);
                 this.coord_y = 1;
                 this.speed = RandomInstanse.Next(200, 350);
-                this.content = (char)RandomInstanse.Next(1, 255);
+                this.content = (char)RandomInstanse.Next(0, 64);
             }
 
         }
