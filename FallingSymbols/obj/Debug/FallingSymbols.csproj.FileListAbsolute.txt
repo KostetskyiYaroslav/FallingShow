@@ -1,0 +1,6 @@
+c:\users\yaroslav\documents\visual studio 2013\Projects\FallingSymbols\FallingSymbols\bin\Debug\FallingSymbols.exe.config
+c:\users\yaroslav\documents\visual studio 2013\Projects\FallingSymbols\FallingSymbols\bin\Debug\FallingSymbols.exe
+c:\users\yaroslav\documents\visual studio 2013\Projects\FallingSymbols\FallingSymbols\bin\Debug\FallingSymbols.pdb
+c:\users\yaroslav\documents\visual studio 2013\Projects\FallingSymbols\FallingSymbols\obj\Debug\FallingSymbols.csprojResolveAssemblyReference.cache
+c:\users\yaroslav\documents\visual studio 2013\Projects\FallingSymbols\FallingSymbols\obj\Debug\FallingSymbols.exe
+c:\users\yaroslav\documents\visual studio 2013\Projects\FallingSymbols\FallingSymbols\obj\Debug\FallingSymbols.pdb
